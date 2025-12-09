@@ -81,7 +81,7 @@ export default function BlogSlider() {
     setCurrentSlide((prev) => (prev - 1 + blogs.length) % blogs.length);
   };
 
-  const goToSlide = (index) => {
+  const goToSlide = (index:any) => {
     setCurrentSlide(index);
   };
 

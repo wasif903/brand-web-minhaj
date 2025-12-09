@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function ServicesGrid() {
-  const [hoveredCard, setHoveredCard] = useState(null);
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   const services = [
     {
@@ -47,9 +47,9 @@ export default function ServicesGrid() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {services.map((service) => (
+          {services.map((service, i) => (
             <div
-              key={service.id}
+              key={i + 1}
               className="group relative h-[450px] overflow-hidden rounded-lg cursor-pointer"
               onMouseEnter={() => setHoveredCard(service.id)}
               onMouseLeave={() => setHoveredCard(null)}

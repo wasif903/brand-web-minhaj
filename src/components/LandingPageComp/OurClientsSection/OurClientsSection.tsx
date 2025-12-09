@@ -68,7 +68,7 @@ const OurClientsSection = () => {
     );
   };
 
-  const goToTestimonial = (index) => {
+  const goToTestimonial = (index: any) => {
     setCurrentIndex(index);
   };
   return (

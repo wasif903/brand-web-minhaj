@@ -7,7 +7,7 @@ import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/LandingPageComp/ContactForm/ContactForm";
 import OurClientsSection from "@/components/LandingPageComp/OurClientsSection/OurClientsSection";
 import OurStackSection from "@/components/LandingPageComp/OurStackSection/OurStackSection";
-import ServiceSection from "@/components/LandingPageComp/InustriesSection/ServiceSection";
+import InustriesSection from "@/components/LandingPageComp/InustriesSection/InustriesSection";
 import ProcedureSection from "@/components/ServiceComp/ProcedureSection/ProcedureSection";
 import MainLayout from "@/Layout/MainLayout";
 import React from "react";
@@ -23,7 +23,7 @@ const page = () => {
             flexDirection: "row-reverse",
           }}
         />
-        <ServiceSection heading="Related Service" />
+        <InustriesSection heading="Related Service" />
       </div>
       <div className="flex flex-col lg:gap-28 md:gap-20 gap-14">
         <ProcedureSection />
